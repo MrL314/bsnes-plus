@@ -220,7 +220,7 @@ static bool fdd_dos_insert_empty(fdd_t* fdd, int data_size) {
                 fdd_sector_t* sector = &track->sectors[sector_index];
                 sector->info.upd765.c = track_index;
                 sector->info.upd765.h = side_index;
-                sector->info.upd765.r = sector_index;
+                sector->info.upd765.r = sector_index+1;
                 sector->info.upd765.n = 0xFF;
                 sector->info.upd765.st1 = 0;
                 sector->info.upd765.st2 = 0;
